@@ -128,7 +128,7 @@ nav ul a:hover{
 }
 
 @media (max-width: 600px){
-    nav{
+    nav ul{
         display: none;
     }
 }

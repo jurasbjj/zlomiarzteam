@@ -134,6 +134,8 @@ nav ul a:hover{
 header{
     height: 87vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 
     background-image: url('img/bg/bg1.jpg');
@@ -143,6 +145,15 @@ header{
 }
 header span{
     animation: fadeIn 2s both;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+header span h2{
+    line-height: 50%;
 }
 @keyframes headerIn {
     0%{opacity: 0;}
@@ -150,60 +161,31 @@ header span{
     100%{opacity: 1}
 }
 header img{
-    width: 40%;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.8;
+    width: 50%;
+    opacity: 0.9;
+    /* display: none; */
 }
 
 header h1, header h2{
+    padding: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
-    position: absolute;
     color: white;
     text-shadow:
     1px 1px black,
     -1px 1px black,
     -1px -1px black,
     1px -1px black;
-    left: 50%;
-    /* top: 50%; */
-    transform: translate(-50%, -50%);
     z-index: 1;
+    opacity: 0.7;
 }
 header h1{
-    top: 15%;
     font-size: 2.3em;
 }
 header h2{
-    bottom: 4%;
     font-size: 1.8em;
 }
 header h2:nth-of-type(2){
-    bottom: -4%;
-}
-
-
-
-
-
-header div{
-    height: 100%;
-    flex-basis: 50%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header .bjj{
-    background-image: url('img/bg/bgbjj.jpg');
-    background-position: -100px;
-    
-}
-header .kick{
-    background-image: url('img/bg/bgkick2.jpg');
-    background-position: 10px;
 }
 
 /* KONIEC HEADER */
@@ -338,7 +320,8 @@ header .kick{
     margin-top: 30px;
 }
 .table .col{
-    width: 150px;
+    flex-basis: 30%;
+    /* width: 150px; */
     height: 50px;
     background-color: #f0f0f0;
     margin: 1px;
@@ -346,7 +329,8 @@ header .kick{
     text-align: center;
 }
 .table .col.big{
-    width: 200px;
+    flex-basis: 40%;
+    /* width: 200px; */
     text-align: justify;
     padding: 0 0 0 20px;
 }
@@ -356,7 +340,8 @@ header .kick{
 }
 .table .col.hide{
     background-color: transparent;
-    width: 200px;
+    /* width: 200px; */
+    flex-basis: 40%;
 }
 .table .col.sex{
     background-color: transparent;

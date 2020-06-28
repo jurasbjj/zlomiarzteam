@@ -127,6 +127,12 @@ nav ul a:hover{
     color: gray;
 }
 
+@media (max-width: 600px){
+    nav ul{
+        display: none;
+    }
+}
+
 
 /* KONIEC NAWIGACJA */
 
@@ -644,6 +650,8 @@ header h2:nth-of-type(2){
     }
     .contact .adres iframe{
         margin-top: 5vh;
+        width: 300px;
+        height: 300px;
     }
 }
 /* KONIEC KONTAKT */

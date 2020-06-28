@@ -135,7 +135,56 @@ header{
     height: 87vh;
     display: flex;
     position: relative;
+
+    background-image: url('img/bg/bg1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
+header span{
+    animation: fadeIn 2s both;
+}
+@keyframes headerIn {
+    0%{opacity: 0;}
+    49%{opacity: 0;}
+    100%{opacity: 1}
+}
+header img{
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+header h1, header h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    color: white;
+    text-shadow:
+    1px 1px black,
+    -1px 1px black,
+    -1px -1px black,
+    1px -1px black;
+    left: 50%;
+    /* top: 50%; */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+header h1{
+    top: 15%;
+    font-size: 2.3em;
+}
+header h2{
+    bottom: 4%;
+    font-size: 1.8em;
+}
+header h2:nth-of-type(2){
+    bottom: -4%;
+}
+
 
 
 
@@ -150,7 +199,7 @@ header div{
 header .bjj{
     background-image: url('img/bg/bgbjj.jpg');
     background-position: -100px;
-
+    
 }
 header .kick{
     background-image: url('img/bg/bgkick2.jpg');

@@ -90,15 +90,32 @@
     //insta
     let left = 0
 
+    
     $('.fa-chevron-right').on('click', function(){
+        if(mobileViewport.matches) {
+            $('.wrap').animate({
+                'left': '-33%'
+            },500)
+        }
+        else {
+            // viewport > 480px
         $('.wrap').animate({
             'left': '-20%'
         },500)
+    }
     })
     $('.fa-chevron-left').on('click', function(){
+        if(mobileViewport.matches) {
+            $('.wrap').animate({
+                'left':  '0%'
+            },500)
+        }
+        else {
+            // viewport > 480px
         $('.wrap').animate({
             'left':  '0%'
         },500)
+    }
 
     })
     // koniec insta
@@ -114,6 +131,16 @@
             'scrollTop': $('.logo1').offset().top
         }, 500)
     })
+
+    
+    var mobileViewport = window.matchMedia("screen and (max-width: 600px)");
+
+    if(mobileViewport.matches) {
+        // viewport <= 480px
+    } else {
+        // viewport > 480px
+    }
+
     // koniec scroll
 
     //burger 

@@ -53,6 +53,18 @@ section:nth-child(odd){
 body{
     overflow-x: hidden;
     font-family: 'oswald';
+    font-size: 16px;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+}
+@media (max-width: 365px){
+    body{
+        font-size: 12px;
+    }
 }
 
 aside{
@@ -150,7 +162,7 @@ header{
     background-size: cover;
     background-position: center;
 }
-header span{
+header span.head{
     animation: fadeIn 2s both;
     height: 100%;
 
@@ -158,9 +170,7 @@ header span{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-header span h2{
-    line-height: 50%;
+    text-align: center;
 }
 
 header img{
@@ -193,14 +203,12 @@ header h2:nth-of-type(2){
 
 @media (max-width: 600px){
     header h1{
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
     header{
         background-image: url('img/bg/bg2.jpg');
-        background-size: contain;
-    }
-    header span h2{
-        line-height: 100%;
+        background-size: initial;
+        background-repeat: no-repeat;
     }
     
 }
@@ -295,12 +303,18 @@ header h2:nth-of-type(2){
 }
 
 @media (max-width: 600px){
+
     .news .image{
         display: none;
     }
     .news .post .content{
         flex-basis: 100%;
         padding: 0 3vw;
+    }
+    .news::after{
+        left: 50%;
+        top: 60%;
+        background-size: 70%;
     }
 
 }
@@ -403,7 +417,7 @@ header h2:nth-of-type(2){
     border-radius: 5%;
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .price .content{
         flex-direction: column;
         justify-content: space-between;
@@ -418,6 +432,7 @@ header h2:nth-of-type(2){
     
     .table{
         flex-basis: 100%;
+        /* font-size: 1em; */
     }
     .cards{
         display: flex;
@@ -433,6 +448,11 @@ header h2:nth-of-type(2){
     }
 
 }
+/* @media (max-width: 320px){
+    .table{
+        font-size: 0.9em;
+    }
+} */
 /* KONIEC CENNIK */
 
 /* TRENEIRO */
@@ -474,6 +494,7 @@ header h2:nth-of-type(2){
     animation: fadeIn 1s linear;
     padding: 2vh;
 }
+
 
 /* KONIEC TRENEIRO */
 
@@ -540,6 +561,11 @@ header h2:nth-of-type(2){
     color: rgb(221, 144, 1);
 }
 
+@media (max-width: 600px){
+    .solo div{
+        flex-direction: column;
+    }
+}
 /* KONIEC INDYWIDUALNE */
 
 /* INSTA */
@@ -658,6 +684,7 @@ header h2:nth-of-type(2){
 }
 
 @media (max-width: 600px){
+    
     .contact .adres{
         flex-direction: column;
         justify-content: space-around;

@@ -571,8 +571,8 @@ header h2:nth-of-type(2){
         flex-basis: 50%;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
+        text-align: center;
     }
     .solo div .wrap img{
         width: 50%;

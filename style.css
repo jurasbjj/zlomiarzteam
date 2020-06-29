@@ -8,8 +8,19 @@
 :root{
     --primaryColor: white;
     --secondaryColor: whitesmoke;
-    --maxWidth: 1000px;
+    --maxWidth: 1000px
+
+
 }
+@media (min-width: 1600px){
+    :root{
+        --maxWidth: 1200px
+
+    }
+        
+}
+
+
 
 /* DOMYŚLNE */
 
@@ -39,7 +50,9 @@ section{
     padding: 0 0 3vh 0;
     text-align: center;
     border-bottom: 1px solid lightgray;
+    position: relative;
 }
+
 section:nth-child(even){
     background-color: var(--secondaryColor);
 }
@@ -298,20 +311,8 @@ header h1{
 header h2{
     font-size: 1.5em;
 }
-header h2:nth-of-type(2){
-}
 
-@media (max-width: 600px){
-    header h1{
-        /* font-size: 1.5em; */
-    }
-    /* header{
-        background-image: url('img/bg/bg2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    } */
-   
-}
+
 @media (orientation: portrait){
     header{
         background-image: url('img/bg/bg2.png');
@@ -332,8 +333,8 @@ header h2:nth-of-type(2){
 /* NEWS */
 .news{
     min-height: 80vh;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .news .post{
@@ -350,7 +351,7 @@ header h2:nth-of-type(2){
 }
 .news .post .image img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: none;    
     position: relative;
 }
@@ -430,7 +431,11 @@ header h2:nth-of-type(2){
     }
 
 }
-
+@media (min-width: 1600px){
+    .news{
+        min-height: 60vh;
+    }    
+}
 /* KONIEC NEWS */
 
 
@@ -675,9 +680,7 @@ header h2:nth-of-type(2){
 }
 
 @media (max-width: 600px){
-    .solo div{
-        /* flex-direction: column; */
-    }
+
     .solo div .wrap{
         padding: 2vh 3vw 2vh 3vw;
         flex-basis: 50%;
@@ -836,5 +839,10 @@ header h2:nth-of-type(2){
         width: 300px;
         height: 300px;
     }
+}
+@media(min-width: 1600px){
+    .contact{
+    min-height: 10vh;
+}
 }
 /* KONIEC KONTAKT */

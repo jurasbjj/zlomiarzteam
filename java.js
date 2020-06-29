@@ -159,5 +159,9 @@
             ulMobile.classList.toggle('active');
         })
     })
+    // koniec burger
+
+    const section = document.querySelectorAll('section')
+
 
     

@@ -572,7 +572,6 @@ header h2:nth-of-type(2){
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
     .solo div .wrap img{
         width: 50%;
@@ -581,6 +580,7 @@ header h2:nth-of-type(2){
     }
     .solo div .wrap .text{
         flex-basis: 100%;
+        text-align: center;
     }
 }
 /* KONIEC INDYWIDUALNE */

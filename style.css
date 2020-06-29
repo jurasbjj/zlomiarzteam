@@ -307,7 +307,7 @@ header h2:nth-of-type(2){
     }
     header{
         background-image: url('img/bg/bg2.png');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     

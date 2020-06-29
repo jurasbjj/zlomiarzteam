@@ -564,7 +564,23 @@ header h2:nth-of-type(2){
 
 @media (max-width: 600px){
     .solo div{
-        flex-direction: column;
+        /* flex-direction: column; */
+    }
+    .solo div .wrap{
+        padding: 2vh 3vw 2vh 3vw;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .solo div .wrap img{
+        width: 50%;
+        border-radius: 50%;
+        margin-right: 1vw;
+    }
+    .solo div .wrap .text{
+        flex-basis: 100%;
     }
 }
 /* KONIEC INDYWIDUALNE */

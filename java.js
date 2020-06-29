@@ -94,7 +94,7 @@
     $('.fa-chevron-right').on('click', function(){
         if(mobileViewport.matches) {
             $('.wrap').animate({
-                'left': '-33%'
+                'left': '-35%'
             },500)
         }
         else {

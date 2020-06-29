@@ -115,3 +115,22 @@
         }, 500)
     })
     // koniec scroll
+
+    //burger 
+    const burger = document.querySelector('.burger')
+    const ulMobile = document.querySelector('nav ul.mobile')
+    const ulA = document.querySelectorAll('nav ul.mobile a')
+
+    burger.addEventListener('click', function(){
+        burger.classList.toggle('active');
+        ulMobile.classList.toggle('active');
+    })
+
+    ulA.forEach(function(a){
+        a.addEventListener('click', function(){
+            burger.classList.toggle('active');
+            ulMobile.classList.toggle('active');
+        })
+    })
+
+    

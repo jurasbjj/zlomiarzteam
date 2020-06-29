@@ -51,13 +51,12 @@ section:nth-child(odd){
 
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
     font-family: 'oswald';
     font-size: 16px;
 }
-.body2{
-    overflow-x: hidden;
-}
+
 @media (max-width: 768px){
     body{
         font-size: 14px;
